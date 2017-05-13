@@ -87,3 +87,5 @@ The rectangle needs to be created when the game program starts.
   -Repeatedly update the game and draw the display: Draw and Update
   -Free up all the content: UnloadContent
 
+filling a space of the screen with an image:
+ textureRect = new Rectangle(0, 0,GraphicsDevice.Viewport.Width,GraphicsDevice.Viewport.Height);
