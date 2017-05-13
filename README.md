@@ -68,4 +68,22 @@ Testing Intensity Value:
 
 Chapter 4:
 Displaying Images
+In the solution Explorer open the Content Folder  right click the Content.mgcb  openWithMonoGame Pipeline Tool and hit OK
+EditAdd Existing Item browse and find the images saved on the hard drive
+Pick Build from the main menu  and Build –> ok.
+Add the code highlighted in red to the Game1.cs
+LoadContent” method has the responsibility of loading all the contents and make them ready for use.
+In addition to loading the content it creates a “SpriteBatch” for the program to use.
+In MonoGame the image is a sprite, A sprite is a flat, preloaded image that is used as part of a computer game.
+To locate a sprite on the screen we use “Rectangle”. It holds information about the position and size of a rectangle.
+The position of the rectangle is given by the coordinates of its top left corner. You express a position on the screen by giving an x coordinate value (the distance from left to right) and a y coordinate value (the distance down the screen from top).
+It means that the position with the coordinate of (0,0) is the top left corner.
+The rectangle gets the coordinates of the top left corner of an image location as well as the Width and Height in pixels.
+When a rectangle is created it passes the( x,y, width, height) values that will be held within rectangle structure.
+It means that if we ever wanted to move the image or change its size on the screen we need to change only one of the values that is held in the rectangle.
+The rectangle needs to be created when the game program starts. 
+  -Set things up: Initialize
+  -Load game Content: LoadContent
+  -Repeatedly update the game and draw the display: Draw and Update
+  -Free up all the content: UnloadContent
 
